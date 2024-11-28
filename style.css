@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Parkinsans:wght@300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  margin: 0;
+  overflow: scroll; /* Tetap memungkinkan scroll */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+section {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  color: white;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+/* ============ section 1 */
+.section1 {
+  height: 300vh;
+  background-image: url(wp\ jeh.jpeg);
+}
+
+/* ============ curtain */
+.curtain h1.mobile {
+  display: none;
+}
+.curtain h1,
+h2 {
+  text-transform: uppercase;
+}
+
+.curtain h2 {
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.curtain h1 {
+  line-height: 1;
+  font-size: 10em;
+  font-weight: 800;
+  background-image: url(wp\ jeh.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-clip: text;
+  color: transparent;
+}
+
+.curtain {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+/* ============ section 2 */
+.section3 {
+  padding: 10%;
+  padding-bottom: 30%;
+  background-image: url(wp\ jeh.jpeg);
+}
+
+.wrapper {
+  position: relative;
+  border-radius: 20px;
+  padding: 3%;
+  gap: 30px 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff70;
+}
+
+.card {
+  color: #111;
+  width: 49%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.02);
+}
+
+.card figcaption {
+  color: black;
+  transition: 0.3s;
+}
+.card:hover figcaption {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ============ section 3 */
+.section2 {
+  padding: 10%;
+  background-image: url(howl.jpeg);
+}
+
+.contact {
+  width: 45%;
+  padding-bottom: 50px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 48%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+.gmap_iframe {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+/* ============ Responsive */
+
+@media screen and (max-width: 1024px) {
+  .curtain h1 {
+    font-size: 8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section1 {
+    height: 200vh;
+  }
+  .curtain h1.desktop {
+    display: none;
+  }
+  .curtain h1.mobile {
+    display: block;
+  }
+
+  .mapouter, .contact {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section1 {
+    height: 150vh;
+  }
+  .section3 {
+    padding: 20% 3% 50%;
+  }
+  
+  .curtain h1 {
+    font-size: 5em;
+  }
+
+  .wrapper {
+    border-radius: 10px;
+    gap: 20px 1%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+  .section2 {
+    padding: 20% 3%;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: white;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #000000;
+  text-align: left;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #555;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section p i {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.footer-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
